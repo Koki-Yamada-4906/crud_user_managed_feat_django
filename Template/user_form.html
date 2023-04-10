@@ -34,7 +34,7 @@
                 </a>
             </button>
         </div>
-        <form id="addForm" method="post" action="{% url 'app:add2' %}">
+        <form id="addForm" method="post" action="{% url 'app:add_form' %}">
             {% csrf_token %}
             <div class="mb-2">
                 <label class="form-label" for="name">Name</label>

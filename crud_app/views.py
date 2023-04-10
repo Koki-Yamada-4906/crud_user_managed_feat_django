@@ -22,9 +22,9 @@ def update_user(request, pk):
     return render(request, "index.html", {"user": user})
 
 def add_user(request):
-    return render(request, "add_user.html")
+    return render(request, "user_form.html")
     
-def add_user2(request):
+def create_user(request):
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get("email")
